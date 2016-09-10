@@ -1,0 +1,15 @@
+* basic hotkey
+| f       | follow link, open link      |
+| c       | copy link                   |
+| 1-0     | select window n             |
+| M-p/M-n | select previous/next window |
+| h/H     | open link from history      |
+| b       | set bookmark                |
+| o/O     | open link from bookmark     |
+| C-c C-f | webjump                     |
+
+* basic usage
+- select text
+C-s to search for the start of the text you want to copy, and then use C-SPC or S to select just like emacs.
+- bookmark
+try firefox xmarks extention to sync bookmark across browers.
