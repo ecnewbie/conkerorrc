@@ -39,4 +39,14 @@ for (let i = 0; i < 10; ++i) {
 
 // for select text.
 require("caret.js");
-add_hook("create_buffer_hook", caret_mode_enable)
+
+interactive("newbie/isearch-forward",
+    "Start interactive text search, forward from point.",
+    function (I) {
+      caret_mode_enable(I.buffer);
+      isearch_start(I.window, true);
+    });
+
+
+define_key(default_global_keymap, "C-s", "newbie/isearch-forward");
+define_key(caret_keymap, "q", "caret-mode");
